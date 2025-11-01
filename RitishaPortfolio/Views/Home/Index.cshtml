@@ -1,0 +1,66 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home";
+}
+
+<!-- ===== Home Section ===== -->
+<section id="home">
+    <div class="container">
+        <div class="row align-items-center mt-5">
+            <div class="col-md-7">
+                <h1 class="fw-bold" style="font-size: 3rem;">
+                    Hello, I am <span style="color:#f24b0f;">Ritisha Das</span>
+                </h1>
+                <p class="mt-3 fs-5 text-secondary">
+                    I'm a recent Information Technology graduate with a CGPA of 8.45,
+                    passionate about front-end development and creating user-friendly digital experiences.
+                    I also have hands-on experience working with the .NET ecosystem,
+                    building modern, responsive, and meaningful applications
+                    also love exploring new ways to solve problems creatively.
+                </p>
+                <p class="fs-6 text-secondary">
+                    Whether it's working on websites, smart features, or interactive tools, I'm always excited to learn, grow,
+                    and create something meaningful.
+                </p>
+                <div class="mt-3">
+                    <p>📍 Kolkata, India</p>
+                    <p>🟢 Available for new opportunities</p>
+                </div>
+                <div class="mt-4">
+                    <a href="https://drive.google.com/file/d/1YGVGmvbrRzw0hG-Tziy6gRg1EpGeuu1l/view?usp=sharing" class="btn btn-danger me-2" target="_blank">View Resume</a>
+                    <a href="https://www.linkedin.com/in/ritisha-das712" class="btn btn-outline-danger" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="col-md-5 text-center">
+                <div style="position:relative;">
+                    <img src="~/images/ritisha.png"
+                         alt="Ritisha Das"
+                         class="img-fluid shadow"
+                         style="width:300px; height:auto; border-radius:40px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+ 
+    @await Html.PartialAsync("_AboutPartial")
+</section>
+
+<section id="education">
+    @await Html.PartialAsync("_EducationPartial")
+</section>
+
+<section id="skills">
+    @await Html.PartialAsync("_SkillsPartial")
+</section>
+
+<section id="work">
+    @await Html.PartialAsync("_WorkPartial")
+</section>
+
+<section id="contact">
+    @await Html.PartialAsync("_ContactPartial")
+</section>
